@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <h1>ENCAPSULATION</h1>
+    <p class="author"> <em>For CI Presentation</em></p>
+    <h2>ENCAPSULATION:</h2>
+    <div class="label">
+    <p class="center">Bundling of attributes (values) and behaviours (methods) into one unit or package.</p>
+    <p class="center">+</p>
+    <p class="center"> Information Hiding (Privacy)</p>
+    </div>
+    <p class="author"><em>….WHY? the purpose of the BUNDLING is to control and implement PRIVACY measures. Aswell as VALIDATE values.
+    </em></p>
+    <h2>Think of VARIABLES.....</h2>
+    <ul>
+        <li>Variables stored outside of a class, GLOBAL, anything can access and control it</li> 
+        <li>Variables inside of a class, LOCAL, the class parameters define access and control of the
+            values.</li>
+        
+    </ul>
+    <h3>Variables and functions in classes have access modifiers:</h3>
+    <ul>
+        <li>PRIVATE = Allows access to the class/object state through the classes own functions</li>
+        <li>PROTECTED = Allows access from classes in the same package or a child class through inheritance.</li>
+        <li>PUBLIC = NO restrictions, access and modification wherever and whenever required.</li>
+    </ul>
+    <div class="label">
+        <p>WE SET THESE WITH ACCESS MODIFIERS(Python)</p>
+        <p class="center">Josh = Josh      <<<<<(Public)</p>
+        <p class="center">_Josh = Josh      <<<<<(Protected)</p>
+        <p class="center">__Josh = Josh.     <<<<<(Private)</p>
+    </div>
+    <h3>Example</h3>
+    <p>Think of a nightclub bouncer, anyone can not just walk-in, we need to provide ID so our age can be
+        VALIDATED before we gain ACCESS to the nightclub. In this scenario the bouncer is the METHOD. The partygoer is the USER. The nightclub is the VARIABLE</p>
+        <p>Get and Set</p>
+        <ul>
+            <li>The bouncer will read(GET) nightclubRules when we ask him for entrance </li>
+            <li>The bouncer will use our age and write(SET) our age to VALIDATE whether we can enter</li>
+
+        </ul>
+        <p>Basically the public cannot walk in and gain access without going through the bouncer, this obviously helps validate that nobody underage enters and restricts who can and cannot have access </p>
+    <h2>THE COFFEE MACHINE</h2>
+    <p>If we were able to set directly to the coffee machine our coffee strength we may run into issues</p>
+    <p class="center"><em>If a coffee machine had 3 strengths, what would happen if we input a strength of 4?</em></p>
+    <p>Likely the coffee machine would either not work at all or not work as intended! Other functions within the object/class would likely not be able to function without a valid input</p>
+    <p>Think of the class functions as INTERMEDIARIES that can GET (read) and SET (write), they will do this providing the parameters in the function are met, SEE EXAMPLE </p>
+    
+    <p>Therefore when we go through a (set)method the object can validate whether the input is valid before writing to the coffee machine, see below</p>
+    <img src="example1.png" alt="Example" class="centre"/>
+    <p>This will eliminate errors occurring that would have happened if we were able to set the objects variables ourselves</p>
+</body>
+</html>
